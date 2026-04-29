@@ -492,10 +492,21 @@ address {
   display: block;
 }
 
-.contact-section img {
+.map-embed {
+  display: grid;
+  gap: 12px;
+}
+
+.map-embed iframe {
   width: 100%;
+  min-height: 380px;
   border: 1px solid var(--line);
   border-radius: 8px;
+}
+
+.map-embed a {
+  justify-self: start;
+  font-weight: 500;
 }
 
 address {
