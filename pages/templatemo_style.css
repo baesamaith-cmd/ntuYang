@@ -29,8 +29,12 @@ a:hover {
 }
 
 #templatemo_header_wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 20;
   border-bottom: 1px solid #dadce0;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(14px);
 }
 
 #templatemo_header,
@@ -44,8 +48,9 @@ a:hover {
 #templatemo_header {
   display: flex;
   align-items: center;
+  min-height: 72px;
   gap: 18px;
-  padding: 20px 0 16px;
+  padding: 10px 0;
 }
 
 #site_title h1,
@@ -56,7 +61,7 @@ a:hover {
 }
 
 #site_title img {
-  width: 128px;
+  width: 112px;
   height: auto;
 }
 
@@ -65,19 +70,29 @@ a:hover {
   margin: 0;
 }
 
-#templatemo_header > p h1 {
-  font-size: 24px;
+#templatemo_header > p h1,
+#templatemo_header > h1 {
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.25;
 }
 
 #templatemo_menu_wrapper {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 10;
-  border-bottom: 1px solid #dadce0;
-  background: rgba(255, 255, 255, 0.96);
-  backdrop-filter: blur(14px);
+  left: 0;
+  right: 0;
+  z-index: 21;
+  border-bottom: 0;
+  background: transparent;
+  pointer-events: none;
+}
+
+#templatemo_menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 72px;
 }
 
 #templatemo_menu ul {
@@ -85,15 +100,15 @@ a:hover {
   flex-wrap: wrap;
   gap: 8px;
   margin: 0;
-  padding: 12px 0;
+  padding: 0;
   list-style: none;
+  pointer-events: auto;
 }
 
 #templatemo_menu a {
   display: inline-flex;
   align-items: center;
-  min-height: 34px;
-  padding: 6px 10px;
+  padding: 10px 12px;
   border-radius: 8px;
   color: #5f6368;
   font-size: 14px;
@@ -184,6 +199,29 @@ body > a[href="/f61217a453d065015090cd27fd6fb2c2"] {
   #templatemo_header {
     align-items: flex-start;
     flex-direction: column;
+    gap: 8px;
+    padding: 14px 0 58px;
+  }
+
+  #templatemo_header > p h1 {
+    font-size: 16px;
+  }
+
+  #templatemo_menu_wrapper {
+    top: 88px;
+  }
+
+  #templatemo_menu {
+    justify-content: flex-start;
+    min-height: auto;
+  }
+
+  #templatemo_menu ul {
+    gap: 4px;
+  }
+
+  #templatemo_menu a {
+    padding: 6px 8px 6px 0;
   }
 
   #templatemo_content {
