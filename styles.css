@@ -320,6 +320,10 @@ address {
   font-weight: 500;
 }
 
+.alumni .person-links {
+  margin-top: 18px;
+}
+
 .alumni p {
   margin-top: 16px;
 }
