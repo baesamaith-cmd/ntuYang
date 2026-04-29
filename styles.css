@@ -344,6 +344,78 @@ address {
   margin-top: 20px;
 }
 
+.text-button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--soft);
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.text-button:hover {
+  border-color: var(--accent);
+  background: #eef3fe;
+  text-decoration: none;
+}
+
+.page-hero {
+  width: min(100% - 40px, var(--max));
+  margin: 0 auto;
+  padding: 84px 0 52px;
+  border-bottom: 1px solid var(--line);
+}
+
+.page-hero h1 {
+  margin-bottom: 16px;
+}
+
+.page-hero p:not(.eyebrow) {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 20px;
+}
+
+.publication-page {
+  background: var(--surface);
+}
+
+.publication-archive {
+  width: min(100% - 40px, var(--max));
+  margin: 0 auto;
+  padding: 50px 0 84px;
+}
+
+.publication-archive h2 {
+  margin: 46px 0 14px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+  font-size: 34px;
+}
+
+.publication-archive h2:first-of-type {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.publication-archive p {
+  max-width: 1040px;
+  margin: 0 0 10px;
+  color: var(--muted);
+}
+
+.publication-archive font[color] {
+  color: var(--ink);
+}
+
+.publication-archive font[color="green"] {
+  color: var(--accent);
+}
+
 .contact-section img {
   width: 100%;
   border: 1px solid var(--line);
