@@ -238,30 +238,7 @@ address {
 .area-grid article {
   padding: 24px;
   min-height: 194px;
-}
-
-.area-grid article:nth-child(1) {
   border-top: 4px solid var(--accent);
-}
-
-.area-grid article:nth-child(2) {
-  border-top: 4px solid var(--green);
-}
-
-.area-grid article:nth-child(3) {
-  border-top: 4px solid var(--gold);
-}
-
-.area-grid article:nth-child(4) {
-  border-top: 4px solid #d93025;
-}
-
-.area-grid article:nth-child(5) {
-  border-top: 4px solid #9334e6;
-}
-
-.area-grid article:nth-child(6) {
-  border-top: 4px solid #00acc1;
 }
 
 .subsection {
