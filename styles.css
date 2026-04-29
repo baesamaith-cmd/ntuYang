@@ -675,6 +675,226 @@ address {
   font-size: 14px;
 }
 
+.review-index {
+  min-height: 100vh;
+  background: #f7f8fa;
+}
+
+.review-shell {
+  width: min(100% - 40px, var(--max));
+  margin: 0 auto;
+  padding: 48px 0 72px;
+}
+
+.review-hero {
+  max-width: 880px;
+  padding: 28px 0 52px;
+}
+
+.review-hero .brand {
+  margin-bottom: 52px;
+}
+
+.review-hero h1 {
+  margin-bottom: 18px;
+}
+
+.review-hero p:not(.eyebrow) {
+  max-width: 720px;
+  color: var(--muted);
+  font-size: 20px;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 310px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+}
+
+.review-card:hover {
+  border-color: var(--accent);
+  text-decoration: none;
+}
+
+.review-card span {
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.review-card h2 {
+  margin-top: auto;
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+
+.review-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.theme-precision {
+  --surface: #fbfcfd;
+  --soft: #f2f5f8;
+  --accent: #005eb8;
+  --accent-dark: #003f7d;
+}
+
+.theme-precision .hero {
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  min-height: calc(100vh - 72px);
+  border-bottom: 0;
+  background: var(--soft);
+}
+
+.theme-precision .hero-media {
+  order: 2;
+  height: auto;
+  min-height: calc(100vh - 72px);
+}
+
+.theme-precision .hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: min(100% - 64px, 560px);
+  padding: 72px 0;
+}
+
+.theme-precision .section {
+  padding: 58px 0;
+}
+
+.theme-precision .area-grid,
+.theme-precision .people-layout {
+  gap: 10px;
+}
+
+.theme-precision .fact-list div,
+.theme-precision .area-grid article,
+.theme-precision .profile-card,
+.theme-precision .people-groups article,
+.theme-precision .publication-list article {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.theme-studio {
+  --accent: #006c67;
+  --accent-dark: #004d49;
+  --soft: #f5f7f4;
+}
+
+.theme-studio .site-header {
+  position: static;
+}
+
+.theme-studio .hero {
+  min-height: auto;
+}
+
+.theme-studio .hero-media {
+  height: min(62vh, 660px);
+  min-height: 420px;
+}
+
+.theme-studio .hero-copy {
+  padding: 76px 0 90px;
+}
+
+.theme-studio h1 {
+  max-width: 980px;
+  font-size: clamp(54px, 8vw, 104px);
+  line-height: 0.98;
+}
+
+.theme-studio h2 {
+  font-size: clamp(34px, 5vw, 64px);
+}
+
+.theme-studio .section {
+  padding: 108px 0;
+}
+
+.theme-studio .area-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.theme-studio .area-grid article {
+  min-height: 170px;
+}
+
+.theme-atlas {
+  --soft: #f8f7f3;
+  --accent: #116a59;
+  --accent-dark: #0a4f43;
+  background: #fbfaf7;
+}
+
+.theme-atlas .site-header {
+  background: rgba(251, 250, 247, 0.94);
+}
+
+.theme-atlas .hero {
+  position: relative;
+  min-height: calc(100vh - 72px);
+  overflow: hidden;
+  border-bottom: 0;
+}
+
+.theme-atlas .hero-media {
+  height: calc(100vh - 72px);
+  min-height: 620px;
+}
+
+.theme-atlas .hero-media::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.72) 42%, rgba(255, 255, 255, 0.1));
+}
+
+.theme-atlas .hero-copy {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: min(100% - 40px, var(--max));
+  margin: 0 auto;
+  padding: 0;
+}
+
+.theme-atlas .hero-copy p:not(.eyebrow) {
+  color: #38423f;
+}
+
+.theme-atlas .intro-grid,
+.theme-atlas .contact-section {
+  align-items: stretch;
+}
+
+.theme-atlas .fact-list div,
+.theme-atlas .profile-card,
+.theme-atlas .people-groups article,
+.theme-atlas .publication-list article,
+.theme-atlas .area-grid article {
+  background: #fffdfa;
+  box-shadow: 0 14px 40px rgba(32, 33, 36, 0.06);
+}
+
 @media (max-width: 820px) {
   .nav {
     align-items: flex-start;
@@ -702,8 +922,24 @@ address {
   .intro-grid,
   .area-grid,
   .people-layout,
-  .contact-section {
+  .contact-section,
+  .review-grid,
+  .theme-precision .hero,
+  .theme-studio .area-grid {
     grid-template-columns: 1fr;
+  }
+
+  .review-card {
+    min-height: 220px;
+  }
+
+  .theme-precision .hero-media {
+    order: 0;
+    min-height: 42vh;
+  }
+
+  .theme-atlas .hero-media {
+    min-height: 620px;
   }
 
   .section {
