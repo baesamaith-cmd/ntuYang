@@ -305,6 +305,32 @@ address {
   gap: 14px;
 }
 
+.person-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.person-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 5px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--soft);
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.person-links a:hover {
+  border-color: var(--accent);
+  background: #eef3fe;
+  text-decoration: none;
+}
+
 .alumni {
   margin-top: 18px;
   padding: 20px 24px;
