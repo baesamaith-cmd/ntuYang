@@ -339,6 +339,66 @@ address {
   gap: 20px;
 }
 
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.photo-grid figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.photo-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: var(--soft);
+}
+
+.photo-grid figcaption {
+  padding: 14px 16px 16px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.news-list {
+  display: grid;
+  gap: 14px;
+}
+
+.news-list article {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 20px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.news-list time {
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.news-list h3,
+.news-list p {
+  grid-column: 2;
+}
+
+.news-list p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
 .publication-list time {
   color: var(--accent);
   font-weight: 700;
@@ -840,7 +900,9 @@ address {
 .theme-precision .area-grid article,
 .theme-precision .profile-card,
 .theme-precision .people-groups article,
-.theme-precision .publication-list article {
+.theme-precision .publication-list article,
+.theme-precision .photo-grid figure,
+.theme-precision .news-list article {
   border-radius: 0;
   box-shadow: none;
 }
@@ -871,6 +933,15 @@ address {
 .theme-precision .publication-list article {
   grid-template-columns: 110px 1fr;
   border-left: 5px solid rgba(0, 94, 184, 0.32);
+}
+
+.theme-precision .photo-grid figure {
+  border-left: 5px solid var(--accent);
+}
+
+.theme-precision .news-list article {
+  grid-template-columns: 110px 1fr;
+  border-left: 5px solid var(--accent);
 }
 
 .theme-studio {
@@ -1010,6 +1081,32 @@ address {
   background: transparent;
 }
 
+.theme-studio .photo-grid {
+  gap: 28px;
+}
+
+.theme-studio .photo-grid figure {
+  border: 0;
+  border-radius: 0;
+  background: #fff;
+  box-shadow: 12px 12px 0 #ead7c4;
+}
+
+.theme-studio .photo-grid figure:nth-child(2) {
+  transform: translateY(34px);
+}
+
+.theme-studio .news-list {
+  gap: 0;
+  border-top: 6px double #2f2a25;
+}
+
+.theme-studio .news-list article {
+  border-width: 0 0 1px;
+  border-radius: 0;
+  background: transparent;
+}
+
 .theme-studio .contact-section {
   background: #2f2a25;
   color: #fffaf5;
@@ -1140,7 +1237,9 @@ address {
 .theme-atlas .profile-card,
 .theme-atlas .people-groups article,
 .theme-atlas .publication-list article,
-.theme-atlas .area-grid article {
+.theme-atlas .area-grid article,
+.theme-atlas .photo-grid figure,
+.theme-atlas .news-list article {
   background: #fffdfa;
   box-shadow: 0 14px 40px rgba(32, 33, 36, 0.06);
 }
@@ -1171,6 +1270,20 @@ address {
 .theme-atlas .publication-list article {
   border: 0;
   border-left: 6px solid rgba(194, 143, 74, 0.72);
+}
+
+.theme-atlas .photo-grid figure {
+  border: 1px solid rgba(17, 106, 89, 0.16);
+  border-radius: 999px 999px 8px 8px;
+}
+
+.theme-atlas .photo-grid img {
+  border-radius: 999px 999px 0 0;
+}
+
+.theme-atlas .news-list article {
+  border: 0;
+  border-left: 6px solid #116a59;
 }
 
 .theme-xchu {
@@ -1400,6 +1513,20 @@ address {
   padding-left: 0;
 }
 
+.theme-xchu .photo-grid figure,
+.theme-xchu .news-list article {
+  border-radius: 0;
+  border-color: rgba(0, 46, 100, 0.18);
+}
+
+.theme-xchu .photo-grid figure {
+  border-top: 7px solid #002e64;
+}
+
+.theme-xchu .news-list article {
+  border-left: 6px solid #002e64;
+}
+
 .theme-xchu .publication-list time {
   color: #002e64;
   font-family: Oswald, "Open Sans", Arial, sans-serif;
@@ -1454,6 +1581,7 @@ address {
   .area-grid,
   .people-layout,
   .contact-section,
+  .photo-grid,
   .review-grid,
   .theme-precision .hero,
   .theme-precision .section-heading,
@@ -1538,6 +1666,19 @@ address {
   .publication-list article {
     grid-template-columns: 1fr;
     gap: 6px;
+  }
+
+  .news-list article {
+    grid-template-columns: 1fr;
+  }
+
+  .news-list h3,
+  .news-list p {
+    grid-column: auto;
+  }
+
+  .theme-studio .photo-grid figure:nth-child(2) {
+    transform: none;
   }
 
   .publication-year-header,
