@@ -86,6 +86,19 @@ body {
   padding: 8px 12px;
 }
 
+.theme-ntuyang-refined .brand {
+  font-size: 15px;
+}
+
+.theme-ntuyang-refined .nav-links a {
+  color: rgba(247, 244, 236, 0.88);
+}
+
+.theme-ntuyang-refined .nav-links a:hover,
+.theme-ntuyang-refined .nav-links a:focus-visible {
+  color: #ffffff;
+}
+
 .nav-links-soft a:hover,
 .nav-links-soft a:focus-visible {
   background: rgba(53, 92, 75, 0.08);
@@ -167,8 +180,8 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
-  width: min(100% - 40px, 1320px);
+  gap: 28px;
+  width: min(100% - 40px, 1360px);
   min-height: 72px;
   margin: 0 auto;
   flex-wrap: nowrap;
@@ -179,9 +192,9 @@ a:hover {
   align-items: center;
   gap: 14px;
   min-width: 0;
-  flex: 0 1 auto;
+  flex: 1 1 auto;
   color: var(--ink);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .brand img {
@@ -192,12 +205,13 @@ a:hover {
 
 .brand span {
   white-space: nowrap;
+  letter-spacing: -0.01em;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   flex-wrap: nowrap;
   justify-content: flex-end;
   flex: 0 0 auto;
@@ -207,8 +221,9 @@ a:hover {
 .nav-links a {
   color: var(--muted);
   padding: 10px 12px;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
 }
 
 .nav-links a:hover {
@@ -1625,6 +1640,10 @@ address {
     gap: 16px;
   }
 
+  .brand {
+    flex: 0 1 auto;
+  }
+
   .brand span {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1632,6 +1651,7 @@ address {
 
   .nav-links {
     flex-wrap: wrap;
+    gap: 4px;
   }
 }
 
