@@ -47,7 +47,7 @@ html {
 
 html,
 body {
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y mandatory;
 }
 
 body {
@@ -340,6 +340,8 @@ h3 {
 .section-screen {
   min-height: 100vh;
   align-content: center;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .intro-grid,
@@ -1492,6 +1494,14 @@ address {
   gap: 18px;
 }
 
+.research-feature-grid-minimal {
+  gap: 14px;
+}
+
+.research-feature-grid-minimal article {
+  min-height: 0;
+}
+
 .research-feature-grid article,
 .editorial-project-list article,
 .publication-editorial-list article {
@@ -1566,15 +1576,17 @@ address {
 
 .people-editorial-groups {
   display: grid;
-  gap: 16px;
+  gap: 12px;
 }
 
 .person-links-editorial a {
-  min-height: 36px;
+  min-height: 34px;
   border-radius: 999px;
   background: rgba(255,255,255,0.65);
   border-color: rgba(35, 48, 42, 0.08);
   color: var(--accent);
+  padding: 4px 10px;
+  font-size: 13px;
 }
 
 .person-links-editorial a:hover {
@@ -1663,7 +1675,7 @@ address {
 @media (max-width: 720px) {
   html,
   body {
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
   }
 
   .theme-ntuyang-refined .nav {
