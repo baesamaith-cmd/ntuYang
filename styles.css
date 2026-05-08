@@ -55,8 +55,25 @@ body {
 }
 
 .site-header-warm {
-  background: rgba(247, 244, 236, 0.9);
-  border-bottom: 1px solid rgba(35, 48, 42, 0.08);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+  background: transparent;
+  border-bottom: 0;
+  backdrop-filter: none;
+}
+
+.site-header-warm .brand,
+.site-header-warm .nav-links a {
+  color: #f7f4ec;
+}
+
+.site-header-warm .nav-links a:hover,
+.site-header-warm .nav-links a:focus-visible {
+  background: rgba(247, 244, 236, 0.12);
+  color: #ffffff;
 }
 
 .nav-links-soft a {
@@ -1150,7 +1167,7 @@ address {
   position: relative;
   width: 100%;
   max-width: none;
-  min-height: calc(100vh - 78px);
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   display: grid;
@@ -1171,8 +1188,8 @@ address {
   width: 100%;
   max-width: none;
   margin: 0;
-  min-height: calc(100vh - 78px);
-  padding: 120px 64px 80px;
+  min-height: 100vh;
+  padding: 148px 64px 80px;
   justify-content: flex-end;
 }
 
@@ -1443,8 +1460,8 @@ address {
   .hero-refined-copy-full {
     width: 100%;
     max-width: none;
-    min-height: calc(100vh - 78px);
-    padding: 96px 24px 48px;
+    min-height: 100vh;
+    padding: 120px 24px 48px;
   }
 
   .story-intro-card,
