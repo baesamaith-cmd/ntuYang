@@ -168,9 +168,10 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  width: min(100% - 40px, var(--max));
+  width: min(100% - 40px, 1320px);
   min-height: 72px;
   margin: 0 auto;
+  flex-wrap: nowrap;
 }
 
 .brand {
@@ -178,6 +179,7 @@ a:hover {
   align-items: center;
   gap: 14px;
   min-width: 0;
+  flex: 0 1 auto;
   color: var(--ink);
   font-weight: 500;
 }
@@ -190,16 +192,16 @@ a:hover {
 
 .brand span {
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
   gap: 8px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: flex-end;
+  flex: 0 0 auto;
+  white-space: nowrap;
 }
 
 .nav-links a {
@@ -1614,6 +1616,22 @@ address {
 
   .hero-refined-visual {
     min-height: 420px;
+  }
+}
+
+@media (max-width: 980px) {
+  .nav {
+    width: min(100% - 24px, var(--max));
+    gap: 16px;
+  }
+
+  .brand span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
   }
 }
 
