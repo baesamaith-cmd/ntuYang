@@ -45,6 +45,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  scroll-snap-type: y proximity;
+}
+
 body {
   margin: 0;
   color: var(--ink);
@@ -307,6 +312,8 @@ h3 {
   margin: 0 auto;
   padding: 84px 0;
   border-bottom: 1px solid var(--line);
+  scroll-snap-align: start;
+  scroll-margin-top: 96px;
 }
 
 .intro-grid,
@@ -1195,6 +1202,8 @@ address {
   min-height: 100vh;
   overflow: hidden;
   background: #101713;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .hero-stage-media {
@@ -1599,6 +1608,11 @@ address {
 }
 
 @media (max-width: 720px) {
+  html,
+  body {
+    scroll-snap-type: y proximity;
+  }
+
   .theme-ntuyang-refined .nav {
     min-height: 76px;
   }
