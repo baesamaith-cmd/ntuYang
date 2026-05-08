@@ -342,7 +342,7 @@ h3 {
   border-bottom: 1px solid var(--line);
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  scroll-margin-top: 132px;
+  scroll-margin-top: 0;
 }
 
 .section-screen {
@@ -1490,6 +1490,21 @@ address {
   padding-right: 32px;
 }
 
+.section-divider {
+  position: relative;
+  border-bottom: 0;
+}
+
+.section-divider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(53, 92, 75, 0.18);
+}
+
 .refined-heading {
   display: grid;
   grid-template-columns: 140px 1fr;
@@ -1648,15 +1663,6 @@ address {
   border-top: 0;
 }
 
-.editorial-project-section::before,
-.warm-publication-section::before {
-  content: "";
-  display: block;
-  width: 72px;
-  height: 1px;
-  background: rgba(53, 92, 75, 0.24);
-  margin-bottom: 28px;
-}
 
 @media (max-width: 980px) {
   .hero-refined,
@@ -1719,12 +1725,6 @@ address {
   .theme-ntuyang-refined h1 {
     max-width: none;
     font-size: clamp(42px, 14vw, 62px);
-  }
-
-  .soft-band-section {
-    border-radius: 22px;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
   .hero-refined {

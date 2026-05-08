@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const target = document.querySelector(href);
       if (!target) return;
       event.preventDefault();
-      const top = target.getBoundingClientRect().top + window.scrollY - 36;
+      const top = target.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({ top, behavior: 'smooth' });
       history.replaceState(null, '', window.location.pathname + href);
     });
