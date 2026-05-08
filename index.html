@@ -27,15 +27,17 @@
     </header>
 
     <main id="home">
-      <section class="hero-refined hero-refined-fullscreen">
-        <div class="hero-refined-visual hero-refined-visual-full" aria-hidden="true">
-          <video class="hero-refined-video" autoplay muted loop playsinline webkit-playsinline preload="auto" poster="images/modular-hero-poster.jpg" aria-hidden="true">
+      <section class="hero-stage">
+        <div class="hero-stage-media" aria-hidden="true">
+          <video class="hero-stage-video" autoplay muted loop playsinline webkit-playsinline preload="auto" poster="images/modular-hero-poster.jpg" aria-hidden="true">
             <source src="media/modular-hero.webm" type="video/webm">
+            <source src="media/modular-hero-mobile.mp4" type="video/mp4">
             <source src="media/modular-hero-lite.mp4" type="video/mp4">
           </video>
-          <div class="hero-video-overlay"></div>
+          <div class="hero-stage-overlay"></div>
         </div>
-        <div class="hero-refined-copy hero-refined-copy-full">
+        <section class="hero-refined hero-refined-fullscreen">
+          <div class="hero-refined-copy hero-refined-copy-full">
           <p class="eyebrow eyebrow-light">Design Sciences Laboratory, NTU Singapore</p>
           <h1>Designing sustainable systems for the factories and products of tomorrow.</h1>
           <p class="hero-refined-lead">
@@ -45,7 +47,8 @@
             <a class="hero-button hero-button-primary" href="#research">Explore research</a>
             <a class="hero-button hero-button-secondary" href="#people">Meet the team</a>
           </div>
-        </div>
+          </div>
+        </section>
       </section>
 
       <section class="section warm-story-grid">
