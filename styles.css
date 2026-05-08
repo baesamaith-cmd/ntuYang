@@ -991,6 +991,60 @@ address {
   background: #f7f4ef;
 }
 
+.publication-theme-ntuyang .page-hero {
+  padding: 96px 0 56px;
+  border-bottom: 1px solid rgba(23, 32, 42, 0.08);
+}
+
+.publication-theme-ntuyang .page-hero h1 {
+  max-width: 10ch;
+}
+
+.publication-theme-ntuyang .publication-summary span,
+.publication-theme-ntuyang .year-nav a {
+  border-radius: 999px;
+  background: #f4f1eb;
+  border-color: rgba(21, 59, 99, 0.12);
+  color: var(--accent);
+}
+
+.publication-theme-ntuyang .publication-archive {
+  padding: 56px 0 96px;
+}
+
+.publication-theme-ntuyang .publication-year {
+  padding: 48px 0;
+  border-top: 1px solid rgba(23, 32, 42, 0.08);
+}
+
+.publication-theme-ntuyang .publication-year-header h2 {
+  font-size: clamp(28px, 4vw, 40px);
+  letter-spacing: -0.03em;
+}
+
+.publication-theme-ntuyang .pub-category {
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 24px;
+  padding: 26px 0;
+  border-top: 1px solid rgba(23, 32, 42, 0.06);
+}
+
+.publication-theme-ntuyang .pub-category h3 {
+  color: var(--ink);
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.publication-theme-ntuyang .archive-publication-list {
+  gap: 16px;
+  color: var(--muted);
+}
+
+.publication-theme-ntuyang .archive-publication-list li {
+  padding-left: 8px;
+}
+
 @media (max-width: 980px) {
   .theme-ntuyang .hero,
   .theme-ntuyang .ntuyang-intro,
@@ -1041,6 +1095,11 @@ address {
   .theme-ntuyang .hero-actions {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .publication-theme-ntuyang .pub-category {
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 }
 
