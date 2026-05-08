@@ -1261,9 +1261,13 @@ address {
 .hero-refined-copy-inner {
   max-width: 760px;
   display: grid;
-  gap: 18px;
+  gap: 20px;
   align-content: end;
   padding-top: 72px;
+}
+
+.eyebrow-light {
+  letter-spacing: 0.08em;
 }
 
 .theme-ntuyang-refined h1 {
@@ -1273,6 +1277,7 @@ address {
   letter-spacing: -0.06em;
   font-weight: 700;
   margin-bottom: 0;
+  text-wrap: balance;
 }
 
 .hero-refined-lead {
@@ -1351,7 +1356,13 @@ address {
 }
 
 .hero-refined-copy-full .hero-refined-lead {
-  color: rgba(247, 244, 236, 0.84);
+  color: rgba(247, 244, 236, 0.86);
+}
+
+.story-intro-card h2,
+.refined-heading h2,
+.warm-contact-section h2 {
+  text-wrap: balance;
 }
 
 .hero-refined-copy-full .hero-button-secondary {
