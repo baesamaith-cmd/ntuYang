@@ -344,6 +344,10 @@ h3 {
   scroll-snap-stop: always;
 }
 
+.section-screen > * {
+  width: 100%;
+}
+
 .intro-grid,
 .contact-section {
   display: grid;
@@ -1430,6 +1434,10 @@ address {
   align-content: start;
 }
 
+.section-screen.warm-contact-section {
+  align-content: center;
+}
+
 .story-intro-card,
 .soft-fact-card,
 .people-lead-card,
@@ -1482,6 +1490,10 @@ address {
   margin-bottom: 34px;
 }
 
+.section-screen .refined-heading {
+  align-self: start;
+}
+
 .refined-heading > div {
   max-width: 720px;
 }
@@ -1500,6 +1512,13 @@ address {
 
 .research-feature-grid-minimal article {
   min-height: 0;
+}
+
+.section-screen .research-feature-grid,
+.section-screen .people-editorial-layout,
+.section-screen .publication-editorial-list,
+.section-screen .warm-contact-section {
+  align-self: center;
 }
 
 .research-feature-grid article,
@@ -1638,6 +1657,13 @@ address {
   .editorial-project-list,
   .people-editorial-layout {
     grid-template-columns: 1fr;
+  }
+
+  .section-screen .research-feature-grid,
+  .section-screen .people-editorial-layout,
+  .section-screen .publication-editorial-list,
+  .section-screen .warm-contact-section {
+    align-self: start;
   }
 
   .section,
