@@ -1255,26 +1255,32 @@ address {
   margin: 0;
   min-height: 100vh;
   padding: 148px 64px 80px;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
-.hero-refined-copy-full > * {
+.hero-refined-copy-inner {
   max-width: 760px;
+  display: grid;
+  gap: 18px;
+  align-content: end;
+  padding-top: 72px;
 }
 
 .theme-ntuyang-refined h1 {
-  max-width: 10ch;
+  max-width: 11ch;
   font-size: clamp(58px, 8vw, 94px);
   line-height: 0.94;
   letter-spacing: -0.06em;
   font-weight: 700;
-  margin-bottom: 22px;
+  margin-bottom: 0;
 }
 
 .hero-refined-lead {
-  max-width: 58ch;
+  max-width: 54ch;
   color: var(--muted);
-  font-size: 20px;
+  font-size: 19px;
+  line-height: 1.75;
+  margin-bottom: 0;
 }
 
 .hero-refined-actions {
@@ -1410,6 +1416,12 @@ address {
   grid-template-columns: 140px 1fr;
   gap: 24px;
   max-width: none;
+  align-items: start;
+  margin-bottom: 34px;
+}
+
+.refined-heading > div {
+  max-width: 720px;
 }
 
 .research-feature-grid,
@@ -1423,7 +1435,26 @@ address {
 .research-feature-grid article,
 .editorial-project-list article,
 .publication-editorial-list article {
-  padding: 26px;
+  padding: 28px;
+}
+
+.research-feature-grid article h3,
+.editorial-project-list article h3,
+.publication-editorial-list article h3,
+.people-editorial-groups article h3,
+.people-lead-card h3 {
+  margin-bottom: 12px;
+}
+
+.research-feature-grid article p,
+.editorial-project-list article p,
+.publication-editorial-list article p,
+.people-editorial-groups article p,
+.people-lead-card p,
+.story-intro-card p,
+.soft-fact-card p,
+.contact-soft-card p {
+  margin-bottom: 0;
 }
 
 .editorial-project-list article span,
@@ -1446,7 +1477,18 @@ address {
 .people-lead-card,
 .people-editorial-groups article,
 .contact-soft-card {
-  padding: 26px;
+  padding: 28px;
+}
+
+.people-lead-card {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+
+.people-editorial-groups article {
+  display: grid;
+  gap: 14px;
 }
 
 .people-editorial-groups {
@@ -1468,6 +1510,20 @@ address {
 
 .publication-editorial-list {
   grid-template-columns: 1fr;
+}
+
+.publication-editorial-list article {
+  grid-template-columns: 180px 1fr;
+  align-items: start;
+}
+
+.publication-editorial-list article span {
+  margin-bottom: 0;
+}
+
+.publication-editorial-list article h3,
+.publication-editorial-list article p {
+  grid-column: 2;
 }
 
 .footer-soft {
@@ -1512,6 +1568,20 @@ address {
     max-width: none;
     min-height: 100vh;
     padding: 120px 24px 48px;
+  }
+
+  .hero-refined-copy-inner {
+    gap: 16px;
+    padding-top: 40px;
+  }
+
+  .publication-editorial-list article {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-editorial-list article h3,
+  .publication-editorial-list article p {
+    grid-column: auto;
   }
 
   .story-intro-card,
