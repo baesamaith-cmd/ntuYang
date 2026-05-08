@@ -1267,7 +1267,32 @@ address {
 .hero-video-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(18, 27, 22, 0.24) 0%, rgba(18, 27, 22, 0.48) 55%, rgba(18, 27, 22, 0.72) 100%);
+  background: linear-gradient(180deg, rgba(8, 12, 10, 0.22) 0%, rgba(8, 12, 10, 0.46) 52%, rgba(8, 12, 10, 0.74) 100%);
+}
+
+.eyebrow-light {
+  color: rgba(247, 244, 236, 0.82);
+}
+
+.hero-refined-copy-full,
+.hero-refined-copy-full h1,
+.hero-refined-copy-full p,
+.hero-refined-copy-full a {
+  color: #f7f4ec;
+}
+
+.hero-refined-copy-full .hero-refined-lead {
+  color: rgba(247, 244, 236, 0.84);
+}
+
+.hero-refined-copy-full .hero-button-secondary {
+  background: rgba(247, 244, 236, 0.1);
+  border-color: rgba(247, 244, 236, 0.28);
+  color: #f7f4ec;
+}
+
+.hero-refined-copy-full .hero-button-secondary:hover {
+  background: rgba(247, 244, 236, 0.18);
 }
 
 .warm-story-grid,
