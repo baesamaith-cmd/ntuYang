@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const target = document.querySelector(href);
       if (!target) return;
       event.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const top = target.getBoundingClientRect().top + window.scrollY - 36;
+      window.scrollTo({ top, behavior: 'smooth' });
       history.replaceState(null, '', window.location.pathname + href);
     });
   });
@@ -26,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       threshold: [0.45, 0.6, 0.75],
-      rootMargin: '-10% 0px -35% 0px'
+      rootMargin: '-6% 0px -40% 0px'
     }
   );
 
