@@ -131,6 +131,33 @@ a:hover {
   backdrop-filter: blur(14px);
 }
 
+.theme-ntuyang-refined .site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: transparent;
+  border-bottom: 0;
+  backdrop-filter: none;
+}
+
+.theme-ntuyang-refined .nav {
+  min-height: 84px;
+}
+
+.theme-ntuyang-refined .brand,
+.theme-ntuyang-refined .brand span,
+.theme-ntuyang-refined .nav-links a {
+  color: #f7f4ec;
+}
+
+.theme-ntuyang-refined .nav-links a:hover,
+.theme-ntuyang-refined .nav-links a:focus-visible {
+  background: rgba(247, 244, 236, 0.14);
+  color: #ffffff;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -1181,6 +1208,18 @@ address {
   height: 100%;
   object-fit: cover;
   display: block;
+  border: 0;
+  outline: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  background: #101713;
+  pointer-events: none;
+}
+
+.hero-stage-video::-webkit-media-controls,
+.hero-stage-video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
 }
 
 .hero-stage-overlay {
@@ -1452,6 +1491,10 @@ address {
 }
 
 @media (max-width: 720px) {
+  .theme-ntuyang-refined .nav {
+    min-height: 76px;
+  }
+
   .theme-ntuyang-refined h1 {
     max-width: none;
     font-size: clamp(42px, 14vw, 62px);
