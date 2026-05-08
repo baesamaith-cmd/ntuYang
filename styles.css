@@ -1505,6 +1505,20 @@ address {
   background: rgba(53, 92, 75, 0.18);
 }
 
+.section-divider {
+  padding-top: 128px;
+}
+
+.section-divider .refined-heading {
+  margin-top: 0;
+  margin-bottom: 40px;
+  padding-top: 0;
+}
+
+.section-divider .eyebrow {
+  padding-top: 2px;
+}
+
 .refined-heading {
   display: grid;
   grid-template-columns: 140px 1fr;
@@ -1732,6 +1746,10 @@ address {
     max-width: none;
     padding: 0;
     gap: 0;
+  }
+
+  .section-divider {
+    padding-top: 88px;
   }
 
   .hero-refined-copy-full {
