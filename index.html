@@ -3,52 +3,239 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Choose Homepage Design | Design Sciences Laboratory</title>
-    <meta name="description" content="Temporary review selector for Design Sciences Laboratory homepage design options.">
+    <title>Design Sciences Laboratory | NTU</title>
+    <meta name="description" content="Design Sciences Laboratory at Nanyang Technological University. Research in smart manufacturing, additive manufacturing, digital twins, and sustainable design systems.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body class="review-index">
-    <main class="review-shell">
-      <section class="review-hero" aria-labelledby="review-title">
-        <a class="brand" href="landing-classic.html#home" aria-label="Design Sciences Laboratory home">
+  <body class="theme-ntuyang">
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="Design Sciences Laboratory home">
           <img src="images/NTULogo.jpg" alt="Nanyang Technological University">
           <span>Design Sciences Laboratory</span>
         </a>
-        <p class="eyebrow">Temporary Review</p>
-        <h1 id="review-title">Choose a homepage design direction</h1>
-        <p>Each option keeps the same landing-page content and links. Only the visual direction changes, so reviewers can compare style without touching detail pages.</p>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#research">Research</a>
+          <a href="#people">People</a>
+          <a href="#publications">Publications</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero ntuyang-hero">
+        <div class="hero-media ntuyang-hero-media" aria-hidden="true">
+          <img src="images/dsLabRoom.jpg" alt="">
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-copy ntuyang-hero-copy">
+          <p class="eyebrow">Nanyang Technological University</p>
+          <h1>Intelligent design for sustainable manufacturing systems</h1>
+          <p class="hero-lead">
+            We apply design science, economic theory, and AI to advanced manufacturing, digital twins, smart factories, and sustainable product-service systems.
+          </p>
+          <div class="hero-actions">
+            <a class="text-button primary-cta" href="#research">Explore research</a>
+            <a class="text-button" href="#contact">Join the lab</a>
+          </div>
+        </div>
       </section>
 
-      <section class="review-grid" aria-label="Homepage design options">
-        <a class="review-card" href="landing-classic.html#home">
-          <span>Option 1</span>
-          <h2>Classic Clean</h2>
-          <p>Current Google Sites-inspired structure with refined spacing and simple cards.</p>
-        </a>
-        <a class="review-card" href="landing-precision.html#home">
-          <span>Option 2</span>
-          <h2>Precision Lab</h2>
-          <p>Sharper research-institute feel with compact sections, stronger borders, and high readability.</p>
-        </a>
-        <a class="review-card" href="landing-studio.html#home">
-          <span>Option 3</span>
-          <h2>Editorial Studio</h2>
-          <p>More expressive typography and magazine-like section pacing for a modern academic presence.</p>
-        </a>
-        <a class="review-card" href="landing-atlas.html#home">
-          <span>Option 4</span>
-          <h2>Research Atlas</h2>
-          <p>Immersive image-led entry with warm neutral surfaces and calm, premium research storytelling.</p>
-        </a>
-        <a class="review-card" href="landing-xchu.html#home">
-          <span>Option 5</span>
-          <h2>Blue Field Site</h2>
-          <p>Inspired by xchu.rocks: white navigation, dark-blue academic accents, bold condensed headings, and an image-overlay hero.</p>
-        </a>
+      <section class="section ntuyang-intro" aria-label="Lab overview">
+        <div class="ntuyang-intro-copy">
+          <p class="eyebrow">Overview</p>
+          <h2>Research that connects theory, systems, and production</h2>
+          <p>
+            The Design Sciences Laboratory develops methods and technologies for customized and sustainable engineering systems. Our work spans design optimization, additive manufacturing, embedded sensing, digital twins, and software-defined production environments.
+          </p>
+        </div>
+        <div class="fact-list ntuyang-facts" aria-label="Lab highlights">
+          <div>
+            <strong>Assoc. Prof. Moon Seung Ki</strong>
+            <span>Principal Investigator, MAE NTU Singapore</span>
+          </div>
+          <div>
+            <strong>Current theme</strong>
+            <span>Smart manufacturing, digital twins, and sustainable system design</span>
+          </div>
+          <div>
+            <strong>Openings</strong>
+            <span>Accepting PhD, intern, and research collaboration enquiries</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="research">
+        <div class="section-heading ntuyang-heading">
+          <p class="eyebrow">Research</p>
+          <div>
+            <h2>Core research directions</h2>
+            <p>Structured around manufacturing intelligence, product architecture, and sustainable engineering systems.</p>
+          </div>
+        </div>
+        <div class="area-grid ntuyang-area-grid">
+          <article>
+            <h3>Design Optimization</h3>
+            <p>Strategic and multidisciplinary design optimization for complex engineering systems and configurable production platforms.</p>
+          </article>
+          <article>
+            <h3>Advanced Manufacturing</h3>
+            <p>Additive manufacturing, process modeling, and production innovation for next-generation manufacturing environments.</p>
+          </article>
+          <article>
+            <h3>Digital Twins</h3>
+            <p>Software-defined products and production twins for prediction, reconfiguration, and operational intelligence.</p>
+          </article>
+          <article>
+            <h3>Sustainable Design</h3>
+            <p>Methods for modularity, remanufacturing, lifecycle decisions, and long-term sustainable system planning.</p>
+          </article>
+        </div>
+
+        <div class="subsection ntuyang-projects">
+          <div class="section-heading ntuyang-heading compact">
+            <p class="eyebrow">Selected Research</p>
+            <div>
+              <h3>Representative projects</h3>
+            </div>
+          </div>
+          <div class="project-cards">
+            <article>
+              <span class="project-label">Corporate Lab</span>
+              <h3>Hyundai-NTU-A*STAR Corporate Lab</h3>
+              <p>Large-scale research programme on intelligent manufacturing systems, process optimization, and industrial transformation.</p>
+            </article>
+            <article>
+              <span class="project-label">Robotics AI</span>
+              <h3>Intelligent Manufacturing Robotics</h3>
+              <p>AI technology for manufacturing process optimization and autonomous mobile robot cell production.</p>
+            </article>
+            <article>
+              <span class="project-label">Digital Twins</span>
+              <h3>Production Digital Twins</h3>
+              <p>Reconfigurable manufacturing systems and twin-driven production planning for future factories.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="people">
+        <div class="section-heading ntuyang-heading">
+          <p class="eyebrow">People</p>
+          <div>
+            <h2>Research team</h2>
+            <p>Organized to make the structure of the lab clear at a glance, while keeping detailed profile pages accessible.</p>
+          </div>
+        </div>
+
+        <div class="people-layout ntuyang-people-layout">
+          <article class="profile-card ntuyang-pi-card">
+            <p class="role">Principal Investigator</p>
+            <h3><a href="pages/personal.ntu.edu.sg_skmoon_MoonSeungKi.html">Assoc. Prof. Moon Seung Ki</a></h3>
+            <p>School of Mechanical and Aerospace Engineering, Nanyang Technological University</p>
+            <p class="profile-meta"><a href="mailto:SKMOON@ntu.edu.sg">SKMOON@ntu.edu.sg</a> · (+65) 6790 5599</p>
+          </article>
+
+          <div class="people-groups ntuyang-people-groups">
+            <article>
+              <h3>Research Fellow</h3>
+              <div class="person-links">
+                <a href="pages/personal.ntu.edu.sg_skmoon_Jeonsangjun.html">Jeon Sang Jun</a>
+              </div>
+            </article>
+            <article>
+              <h3>PhD Students</h3>
+              <div class="person-links">
+                <a href="pages/personal.ntu.edu.sg_skmoon_ChuaZhongYang.html">Chua Zhong Yang</a>
+                <a href="pages/personal.ntu.edu.sg_skmoon_TanYuEn.html">Tan Yu En</a>
+                <a href="pages/personal.ntu.edu.sg_skmoon_Katherinegao.html">Katherine Gao</a>
+                <a href="pages/personal.ntu.edu.sg_skmoon_Nicholasng.html">Nicholas Ng</a>
+                <a href="pages/personal.ntu.edu.sg_skmoon_Leejongsuk.html">Lee Jong Suk</a>
+                <a href="pages/personal.ntu.edu.sg_skmoon_Choseungyon.html">Cho Seung Yon</a>
+                <a href="pages/personal.ntu.edu.sg_skmoon_Khan.html">Khan Muhammad Tayyab</a>
+                <a href="pages/personal.ntu.edu.sg_skmoon_Kimjungyeon.html">Kim Jung Yeon</a>
+                <a href="pages/personal.ntu.edu.sg_skmoon_Seosuyeon.html">Seo Su Yeon</a>
+              </div>
+            </article>
+            <article>
+              <h3>Research Associates / MEng</h3>
+              <div class="person-links">
+                <a href="pages/personal.ntu.edu.sg_skmoon_Kimdonghui.html">Kim Dong Hui</a>
+                <a href="pages/personal.ntu.edu.sg_skmoon_Winston.html">Winston Lim Wei Liang</a>
+                <a href="pages/personal.ntu.edu.sg_skmoon_Wuqiong.html">Wu Qiong Wendy</a>
+                <a href="pages/personal.ntu.edu.sg_skmoon_JeonYeeKyung.html">Jeon Yee Kyung</a>
+                <a href="pages/personal.ntu.edu.sg_skmoon_Jenny.html">Jenny Yi Nagyoung</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <p class="archive-note people-archive-note"><a class="text-button" href="pages/personal.ntu.edu.sg_skmoon_people.html">View full people archive</a></p>
+      </section>
+
+      <section class="section" id="publications">
+        <div class="section-heading ntuyang-heading">
+          <p class="eyebrow">Publications</p>
+          <div>
+            <h2>Selected publications</h2>
+            <p>Recent contributions in manufacturing intelligence, design science, and additive manufacturing.</p>
+          </div>
+        </div>
+
+        <div class="publication-list ntuyang-publication-list">
+          <article>
+            <time>2025</time>
+            <div>
+              <p class="pub-tag">Manufacturing AI</p>
+              <p><strong>Leveraging Vision-Language Models for Manufacturing Feature Recognition in CAD Designs.</strong> ASME Journal of Computing and Information Science in Engineering.</p>
+            </div>
+          </article>
+          <article>
+            <time>2025</time>
+            <div>
+              <p class="pub-tag">Smart Factory</p>
+              <p><strong>Software-Defined Factory: Paradigm Shift in Manufacturing Towards Industry 5.0.</strong> International Journal of Precision Engineering and Manufacturing - Smart Technology.</p>
+            </div>
+          </article>
+          <article>
+            <time>2025</time>
+            <div>
+              <p class="pub-tag">Additive Manufacturing</p>
+              <p><strong>Autonomous printing process optimisation and in-situ anomaly detection in fused deposition modelling.</strong> Virtual and Physical Prototyping.</p>
+            </div>
+          </article>
+        </div>
+
+        <p class="archive-note"><a class="text-button" href="publications.html">Browse full publication list</a></p>
+      </section>
+
+      <section class="section contact-section ntuyang-contact" id="contact">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>Join or collaborate with the lab</h2>
+          <p>We welcome enquiries from prospective PhD students, interns, and research collaborators working in advanced design and manufacturing systems.</p>
+          <address>
+            Design Laboratory (MAE), Block N3.2, N3.2-B1-02<br>
+            65 Nanyang Drive, Singapore 637460<br>
+            Phone: +65 6790 5599<br>
+            Email: <a href="mailto:SKMOON@ntu.edu.sg">SKMOON@ntu.edu.sg</a>
+          </address>
+        </div>
+        <div class="contact-card ntuyang-contact-card">
+          <p><strong>Open to</strong><br>PhD admissions, research internships, visiting researchers, industry collaboration</p>
+          <p><strong>Affiliation</strong><br>School of Mechanical and Aerospace Engineering, NTU Singapore</p>
+          <p><strong>Best next step</strong><br>Reach out with your research interest, CV, or collaboration topic.</p>
+        </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <p>Copyright © Design Sciences Laboratory, Nanyang Technological University.</p>
+    </footer>
   </body>
 </html>
