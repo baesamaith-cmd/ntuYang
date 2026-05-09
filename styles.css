@@ -761,14 +761,31 @@ address {
 .profile-page {
   width: min(100% - 40px, var(--max));
   margin: 0 auto;
+  padding-bottom: 64px;
+}
+
+body:has(.profile-page) {
+  background: #f7f4ec;
+}
+
+body:has(.profile-page) .site-header {
+  position: sticky;
+  background: rgba(247, 244, 236, 0.94);
+  border-bottom: 1px solid rgba(35, 48, 42, 0.08);
+  backdrop-filter: blur(14px);
+}
+
+body:has(.profile-page) .brand,
+body:has(.profile-page) .nav-links a {
+  color: #23302a;
 }
 
 .profile-hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(280px, 0.45fr);
   gap: 40px;
-  padding: 84px 0 62px;
-  border-bottom: 1px solid var(--line);
+  padding: 96px 0 62px;
+  border-bottom: 1px solid rgba(35, 48, 42, 0.08);
 }
 
 .profile-hero h1 {
@@ -784,9 +801,9 @@ address {
 .profile-contact {
   align-self: start;
   padding: 24px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--soft);
+  border: 1px solid rgba(35, 48, 42, 0.08);
+  border-radius: 20px;
+  background: rgba(255,255,255,0.68);
 }
 
 .profile-contact h2 {
@@ -817,11 +834,12 @@ address {
 
 .profile-section {
   padding: 54px 0;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid rgba(35, 48, 42, 0.08);
 }
 
 .profile-section h2 {
   font-size: 34px;
+  letter-spacing: -0.03em;
 }
 
 .profile-section > p {
@@ -842,9 +860,9 @@ address {
   align-items: center;
   min-height: 34px;
   padding: 5px 10px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--soft);
+  border: 1px solid rgba(35, 48, 42, 0.08);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.68);
   color: var(--accent);
   font-size: 14px;
   font-weight: 500;
@@ -879,7 +897,7 @@ address {
   grid-template-columns: 150px minmax(0, 1fr);
   gap: 20px;
   padding: 18px 0;
-  border-top: 1px solid #eef0f2;
+  border-top: 1px solid rgba(35, 48, 42, 0.08);
 }
 
 .timeline span {
@@ -1351,6 +1369,12 @@ address {
   .theme-ntuyang .ntuyang-heading,
   .theme-ntuyang .project-cards,
   .theme-ntuyang .ntuyang-people-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-hero,
+  .profile-columns,
+  .experience-grid {
     grid-template-columns: 1fr;
   }
 
