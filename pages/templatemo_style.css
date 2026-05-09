@@ -4,9 +4,9 @@
 
 body {
   margin: 0;
-  color: #202124;
-  background: #ffffff;
-  font-family: Roboto, Arial, Helvetica, sans-serif;
+  color: #23302a;
+  background: #f7f4ec;
+  font-family: Inter, Roboto, Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.7;
 }
@@ -32,8 +32,8 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 20;
-  border-bottom: 1px solid #dadce0;
-  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid rgba(35, 48, 42, 0.08);
+  background: rgba(247, 244, 236, 0.94);
   backdrop-filter: blur(14px);
 }
 
@@ -109,21 +109,21 @@ a:hover {
   display: inline-flex;
   align-items: center;
   padding: 10px 12px;
-  border-radius: 8px;
-  color: #5f6368;
+  border-radius: 999px;
+  color: #617065;
   font-size: 14px;
   font-weight: 500;
 }
 
 #templatemo_menu a:hover,
 #templatemo_menu a.current {
-  color: #202124;
-  background: #f1f3f4;
+  color: #23302a;
+  background: rgba(53, 92, 75, 0.08);
   text-decoration: none;
 }
 
 #templatemo_content_wrapper {
-  background: #ffffff;
+  background: #f7f4ec;
 }
 
 #templatemo_content {
@@ -133,9 +133,9 @@ a:hover {
 .content_box {
   max-width: 860px;
   padding: 34px;
-  border: 1px solid #dadce0;
-  border-radius: 8px;
-  background: #ffffff;
+  border: 1px solid rgba(35, 48, 42, 0.08);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.72);
 }
 
 .content_box h2 {
@@ -180,8 +180,8 @@ a:hover {
 }
 
 #templatemo_footer_wrapper {
-  border-top: 1px solid #dadce0;
-  background: #f7f8fa;
+  border-top: 1px solid rgba(35, 48, 42, 0.08);
+  background: #ebe5d8;
 }
 
 #templatemo_footer {
