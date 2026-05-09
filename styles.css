@@ -1677,6 +1677,11 @@ address {
   align-content: start;
 }
 
+.contact-side-stack {
+  display: grid;
+  gap: 18px;
+}
+
 .section-screen.warm-contact-section {
   align-content: center;
 }
@@ -1842,6 +1847,21 @@ address {
   min-height: 82vh;
 }
 
+.contact-map-card {
+  border: 1px solid rgba(31, 43, 37, 0.08);
+  border-radius: 20px;
+  background: rgba(255,255,255,0.6);
+  overflow: hidden;
+  padding: 0;
+}
+
+.contact-map-card iframe {
+  display: block;
+  width: 100%;
+  min-height: 280px;
+  border: 0;
+}
+
 .section-screen .research-feature-grid,
 .section-screen .people-editorial-layout,
 .section-screen .publication-editorial-list,
@@ -1906,7 +1926,8 @@ address {
 
 .people-lead-card,
 .people-editorial-groups article,
-.contact-soft-card {
+.contact-soft-card,
+.contact-map-card {
   padding: 28px;
 }
 
