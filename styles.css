@@ -1153,16 +1153,67 @@ address {
 }
 
 .publication-theme-ntuyang .page-hero {
-  padding: 96px 0 56px;
-  border-bottom: 1px solid rgba(23, 32, 42, 0.08);
+  position: relative;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 136px min(64px, 6vw) 72px;
+  border-bottom: 0;
+  background: linear-gradient(180deg, rgba(12, 18, 15, 0.92) 0%, rgba(18, 28, 23, 0.86) 100%);
+  color: #f7f4ec;
+}
+
+.publication-theme-ntuyang .page-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0));
+  pointer-events: none;
+}
+
+.publication-theme-ntuyang .page-hero > * {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 1120px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.publication-theme-ntuyang .page-hero .eyebrow,
+.publication-theme-ntuyang .page-hero h1,
+.publication-theme-ntuyang .page-hero p {
+  color: #f7f4ec;
+}
+
+.publication-theme-ntuyang .page-hero p:not(.eyebrow) {
+  color: rgba(247, 244, 236, 0.82);
 }
 
 .people-directory-page .site-header,
 .publication-theme-ntuyang .site-header {
-  position: sticky;
-  background: rgba(247, 244, 236, 0.94);
-  border-bottom: 1px solid rgba(35, 48, 42, 0.08);
-  backdrop-filter: blur(14px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  background: transparent;
+  border-bottom: 0;
+  backdrop-filter: none;
+}
+
+.people-directory-page .brand,
+.people-directory-page .nav-links a,
+.publication-theme-ntuyang .brand,
+.publication-theme-ntuyang .nav-links a {
+  color: rgba(247, 244, 236, 0.88);
+}
+
+.people-directory-page .nav-links a:hover,
+.people-directory-page .nav-links a[aria-current="page"],
+.publication-theme-ntuyang .nav-links a:hover,
+.publication-theme-ntuyang .nav-links a[aria-current="page"] {
+  color: #ffffff;
+  background: rgba(247, 244, 236, 0.12);
 }
 
 .publication-theme-ntuyang .page-hero h1 {
@@ -1172,16 +1223,16 @@ address {
 .publication-theme-ntuyang .publication-summary span,
 .publication-theme-ntuyang .year-nav a {
   border-radius: 999px;
-  background: #f4f1eb;
-  border-color: rgba(21, 59, 99, 0.12);
-  color: var(--accent);
+  background: rgba(247, 244, 236, 0.08);
+  border-color: rgba(247, 244, 236, 0.14);
+  color: #f7f4ec;
 }
 
 .people-directory-page .publication-summary span {
   border-radius: 999px;
-  background: #f4f1eb;
-  border-color: rgba(21, 59, 99, 0.12);
-  color: var(--accent);
+  background: rgba(247, 244, 236, 0.08);
+  border-color: rgba(247, 244, 236, 0.14);
+  color: #f7f4ec;
 }
 
 .publication-theme-ntuyang .publication-archive {
@@ -1359,6 +1410,10 @@ address {
 }
 
 @media (max-width: 720px) {
+  .publication-theme-ntuyang .page-hero {
+    padding: 120px 24px 56px;
+  }
+
   .entity-card-grid,
   .entity-card-grid-single {
     grid-template-columns: 1fr;
