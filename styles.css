@@ -1567,6 +1567,10 @@ address {
   margin-top: 26px;
 }
 
+.hero-refined-actions .hero-button {
+  max-width: 100%;
+}
+
 .hero-button {
   display: inline-flex;
   align-items: center;
@@ -2075,7 +2079,13 @@ address {
 
   .hero-refined-actions {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-refined-actions .hero-button {
+    width: min(100%, 320px);
+    text-align: center;
   }
 }
 
