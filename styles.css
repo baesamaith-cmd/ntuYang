@@ -788,6 +788,14 @@ body:has(.profile-page) .nav-links a {
   border-bottom: 1px solid rgba(35, 48, 42, 0.08);
 }
 
+.profile-hero-unified {
+  align-items: start;
+}
+
+.profile-hero-main {
+  max-width: 760px;
+}
+
 .profile-hero h1 {
   margin-bottom: 18px;
 }
@@ -804,6 +812,21 @@ body:has(.profile-page) .nav-links a {
   border: 1px solid rgba(35, 48, 42, 0.08);
   border-radius: 20px;
   background: rgba(255,255,255,0.68);
+}
+
+.profile-card-image {
+  margin: 0 0 20px;
+  overflow: hidden;
+  border-radius: 16px;
+  aspect-ratio: 4 / 3;
+  background: #ece7df;
+}
+
+.profile-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .profile-contact h2 {
