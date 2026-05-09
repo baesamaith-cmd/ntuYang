@@ -1727,6 +1727,62 @@ address {
   min-height: 0;
 }
 
+.research-overview-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+.research-overview-card {
+  padding: 28px;
+  border: 1px solid rgba(23, 32, 42, 0.08);
+  border-radius: 24px;
+  background: rgba(53, 92, 75, 0.06);
+}
+
+.research-overview-label {
+  margin-bottom: 12px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.research-strip {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.research-strip article {
+  padding: 20px 0 0;
+  border-top: 1px solid rgba(53, 92, 75, 0.18);
+}
+
+.research-strip span {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.research-strip strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.contact-section-balanced {
+  min-height: 82vh;
+}
+
 .section-screen .research-feature-grid,
 .section-screen .people-editorial-layout,
 .section-screen .publication-editorial-list,
@@ -1858,6 +1914,8 @@ address {
   .warm-contact-section,
   .refined-heading,
   .research-feature-grid,
+  .research-overview-grid,
+  .research-strip,
   .editorial-project-list,
   .people-editorial-layout {
     grid-template-columns: 1fr;
