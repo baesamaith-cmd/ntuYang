@@ -2425,7 +2425,7 @@ address {
   --accent-dark: #642615;
   --soft: #f8f1ea;
   background: #fffaf5;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: Inter, Arial, sans-serif;
 }
 
 .theme-studio .site-header {
@@ -2441,7 +2441,7 @@ address {
 .theme-studio .brand,
 .theme-studio .nav-links a,
 .theme-studio .eyebrow {
-  font-family: Roboto, Arial, sans-serif;
+  font-family: Inter, Arial, sans-serif;
 }
 
 .theme-studio .hero {
@@ -2769,7 +2769,7 @@ address {
   --soft: #f4f4f4;
   --accent: #002e64;
   --accent-dark: #001f45;
-  font-family: "Open Sans", Roboto, Arial, sans-serif;
+  font-family: Inter, Arial, sans-serif;
   background:
     linear-gradient(180deg, transparent 0 690px, #f4f4f4 690px 692px, transparent 692px),
     #fff;
@@ -2786,7 +2786,7 @@ address {
 .theme-xchu h1,
 .theme-xchu h2,
 .theme-xchu h3 {
-  font-family: Oswald, "Open Sans", Arial, sans-serif;
+  font-family: Inter, Arial, sans-serif;
   font-weight: 600;
 }
 
@@ -3005,7 +3005,7 @@ address {
 
 .theme-xchu .publication-list time {
   color: #002e64;
-  font-family: Oswald, "Open Sans", Arial, sans-serif;
+  font-family: Inter, Arial, sans-serif;
   font-size: 22px;
 }
 
