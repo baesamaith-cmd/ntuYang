@@ -1805,6 +1805,15 @@ address {
   color: var(--accent);
 }
 
+.role,
+.research-overview-label,
+.research-strip span,
+.contact-soft-card strong,
+.profile-contact dt,
+.entity-card-meta {
+  font-weight: 700;
+}
+
 .soft-band-section {
   background: linear-gradient(180deg, rgba(235, 229, 216, 0.58) 0%, rgba(235, 229, 216, 0.34) 100%);
   border-radius: 28px;
