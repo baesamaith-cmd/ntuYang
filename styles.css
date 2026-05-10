@@ -1374,12 +1374,22 @@ address {
   background: #ece7df;
 }
 
+.entity-card-person .entity-card-media {
+  aspect-ratio: 3 / 4;
+}
+
 .entity-card-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
   transition: transform 220ms ease;
+}
+
+.entity-card-person .entity-card-media img {
+  object-fit: contain;
+  padding: 18px;
+  background: #f4efe6;
 }
 
 .entity-card-body {
