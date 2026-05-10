@@ -58,7 +58,7 @@ body {
   margin: 0;
   color: var(--ink);
   background: var(--surface);
-  font-family: Roboto, Arial, sans-serif;
+  font-family: Inter, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.7;
 }
