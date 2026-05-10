@@ -1638,6 +1638,10 @@ address {
   letter-spacing: -0.02em;
 }
 
+.section-title-strong {
+  font-weight: 700;
+}
+
 .hero-refined-lead {
   max-width: 42ch;
   color: var(--muted);
