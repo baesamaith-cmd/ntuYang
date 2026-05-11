@@ -1202,6 +1202,20 @@ address {
   color: rgba(247, 244, 236, 0.82);
 }
 
+.people-directory-main .page-hero {
+  background:
+    radial-gradient(circle at 14% 18%, rgba(255,255,255,0.045) 0, rgba(255,255,255,0) 28%),
+    linear-gradient(180deg, rgba(8, 13, 11, 0.97) 0%, rgba(12, 20, 16, 0.95) 58%, rgba(16, 25, 20, 0.94) 100%);
+}
+
+.ntuyang-publication-page .publication-archive {
+  padding-top: 64px;
+}
+
+.people-directory-archive {
+  padding-top: 64px;
+}
+
 .people-directory-page .site-header,
 .publication-theme-ntuyang .site-header {
   position: absolute;
@@ -1398,6 +1412,10 @@ address {
   padding: 20px 20px 22px;
 }
 
+.entity-card-publication .entity-card-body {
+  gap: 12px;
+}
+
 .entity-card-meta {
   margin: 0;
   color: var(--accent);
@@ -1411,6 +1429,14 @@ address {
   margin: 0;
   font-size: 22px;
   line-height: 1.2;
+}
+
+.entity-card-publication .entity-card-meta {
+  color: #486457;
+}
+
+.entity-card-publication .entity-card-note {
+  font-size: 14px;
 }
 
 .entity-card-body p {
@@ -1609,9 +1635,9 @@ address {
 }
 
 .hero-refined-copy-inner {
-  max-width: 640px;
+  max-width: 620px;
   display: grid;
-  gap: 18px;
+  gap: 20px;
   align-content: end;
   padding-top: 72px;
 }
@@ -1621,10 +1647,10 @@ address {
 }
 
 .theme-ntuyang-refined h1 {
-  max-width: 9ch;
-  font-size: clamp(54px, 7vw, 82px);
-  line-height: 0.96;
-  letter-spacing: -0.06em;
+  max-width: 10ch;
+  font-size: clamp(56px, 7.4vw, 88px);
+  line-height: 0.94;
+  letter-spacing: -0.065em;
   font-weight: 700;
   margin-bottom: 0;
   text-wrap: balance;
@@ -1643,10 +1669,10 @@ address {
 }
 
 .hero-refined-lead {
-  max-width: 42ch;
+  max-width: 40ch;
   color: var(--muted);
   font-size: 18px;
-  line-height: 1.7;
+  line-height: 1.8;
   margin-bottom: 0;
 }
 
@@ -1890,11 +1916,21 @@ address {
   align-items: stretch;
 }
 
+.research-overview-grid-composed {
+  grid-template-columns: minmax(320px, 0.92fr) minmax(0, 1.08fr);
+}
+
 .research-overview-card {
   padding: 30px;
   border: 1px solid rgba(31, 43, 37, 0.08);
   border-radius: 20px;
   background: rgba(255,255,255,0.4);
+}
+
+.research-overview-card-large {
+  display: grid;
+  align-content: end;
+  min-height: 100%;
 }
 
 .research-overview-label {
@@ -1970,6 +2006,12 @@ address {
 .research-feature-grid article {
   background: rgba(255,255,255,0.5);
   border-radius: 20px;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.research-feature-grid article:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(23, 32, 42, 0.05);
 }
 
 .editorial-project-list article {
