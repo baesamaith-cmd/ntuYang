@@ -645,6 +645,13 @@ address {
   font-size: 20px;
 }
 
+.people-directory-hero h1,
+.people-directory-hero p:not(.eyebrow),
+.ntuyang-publication-hero h1,
+.ntuyang-publication-hero p:not(.eyebrow) {
+  text-align: left;
+}
+
 .publication-summary {
   display: flex;
   flex-wrap: wrap;
@@ -1189,6 +1196,15 @@ address {
   z-index: 1;
   width: min(100%, 1120px);
   margin-left: auto;
+  margin-right: auto;
+}
+
+.publication-theme-ntuyang .page-hero .eyebrow,
+.publication-theme-ntuyang .page-hero h1,
+.publication-theme-ntuyang .page-hero p:not(.eyebrow),
+.publication-theme-ntuyang .page-hero .publication-summary {
+  max-width: 760px;
+  margin-left: 0;
   margin-right: auto;
 }
 
